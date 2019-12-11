@@ -23,7 +23,7 @@
 }
 
 html {
-  background: url(images/Mountains.jpg) no-repeat center center fixed;
+  background: url(images/Mountains.jpg) no-repeat center fixed;
   background-size: cover;
   width: 100vw;
   box-sizing: border-box;
