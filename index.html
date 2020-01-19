@@ -1,125 +1,115 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="main.css" rel="stylesheet" type="text/css"/>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
+    <link href="styles/css/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+
+    <script src="js/canvas.js" async></script>
   </head>
+  <title>DevinMGraham</title>
 
 <body>
 <!-- Navbar Begin -->
-  <nav id="navbar">
-    <ul id="nav-list">
-      <li><a href="#welcome-section"> About Me </a></li>
-      <li><a href="#projects"> Current Projects </a></li>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#welcome-section"> About Me </a></li><span>&bull;</span>
+      <li><a href="#projects"> Current Projects </a></li><span>&bull;</span>
       <li><a href="#contact"> Contact </a></li>
     </ul>
   </nav>
 <!-- Navbar End -->
 
-<!-- Welcome Section Begin -->
+<!-- Header Section Begin -->
   <section class="welcome-section" id="welcome-section">
     <canvas></canvas>
-    <script src="canvas.js"></script> <!-- Importing JavaScript from canvas.js file -->
-    <h1 id="welcome-text-1"> Hi, I'm Devin </h1>
-    <p id="welcome-text-2"> <strong>&lt  I code stuff  /&gt</strong> </p>
+    <div class="header-text">
+      <h1> Hi, I'm Devin </h1>
+      <p> <strong>&lt  I code stuff  /&gt</strong> </p>
+    </div>
   </section>
-<!-- Welcome Section End -->
+<!-- Header Section End -->
 
 <!-- Projects Section Begin -->
-  <section id="projects">
+  <section class="projects">
     <h1> My Projects </h1>
 <!-- Tribute Page -->
     <div class="grid">
-      <div class="code-grid">
-      <a
-        target="_blank"
-        href="Tribute Page/index.html"
-        class="project-tile"
-      >
-      <img
-        id="project-image"
-        src="images/Tribute.jpg"
-        alt="Tribute Page Project">
-      </a>
-      <a id="code" href="https://github.com/Devin44G/Tribute-Page-HTML" target="_blank">&lt;The Code&gt;</a>
+      <div class="project-card">
+        <div>
+          <h2>Tribute Page</h2>
+          <a class="project-img tribute" target="_blank" href="projects/Tribute Page/index.html">
+            <img src="images/Tribute.jpg" alt="Tribute Page Project">
+          </a>
+        </div>
+        <a class="code" href="https://github.com/Devin44G/Tribute-Page-HTML" target="_blank">&lt;The Code/&gt;</a>
       </div>
-    </div>
 <!-- Form Validation -->
-    <div class="grid">
-      <div class="code-grid">
-      <a
-        target="_blank"
-        href="Form Validation/index.html"
-        class="project-tile"
-      >
-      <img
-        id="project-image"
-        src="images/ValidationForm.jpg"
-        alt="Animated Survey Project">
-      </a>
-      <a id="code" href="https://github.com/Devin44G/Animated-Validation-Form" target="_blank">&lt;The Code&gt;</a>
+      <div class="project-card">
+        <div>
+          <h2>JavaScript Animated Form</h2>
+          <a class="project-img form" target="_blank" href="projects/Form Validation/index.html">
+            <img src="images/ValidationForm.jpg" alt="Animated Survey Project">
+          </a>
+        </div>
+        <a class="code" href="https://github.com/Devin44G/Animated-Validation-Form" target="_blank">&lt;The Code/&gt;</a>
       </div>
-    </div>
 <!-- PHP Blog -->
-    <div class="grid">
-      <div class="code-grid">
-      <a
-        target="_blank"
-        href="php.html"
-        class="project-tile">
-      <img
-        id="project-image"
-        src="images/PHP Blog Full.jpg"
-        alt="PHP Blog">
-      </a>
-      <a id="code" href="https://github.com/Devin44G/PHP-Blog-Project" target="_blank">&lt;The Code&gt;</a>
+      <div class="project-card">
+        <div>
+          <h2>PHP Blog Creator</h2>
+          <a class="project-img php" target="_blank" href="projects/php.html">
+            <img src="images/PHP Blog Full.jpg" alt="PHP Blog">
+          </a>
+        </div>
+        <a class="code" href="https://github.com/Devin44G/PHP-Blog-Project" target="_blank">&lt;The Code/&gt;</a>
       </div>
-    </div>
 <!-- Lambda Portfolio Project -->
-    <div class="grid">
-      <div class="code-grid">
-      <a
-        target="_blank"
-        href="portfolio-website\Portfolio\index.html"
-        class="project-tile">
-      <img
-        id="project-image"
-        src="images\LambdaPortfolio.JPG"
-        alt="Lamba Portfolio Project">
-      </a>
-      <a id="code" href="https://github.com/Devin44G/portfolio-website/tree/devin-graham" target="_blank">&lt;The Code&gt;</a>
+      <div class="project-card">
+        <div>
+          <h2>Lambda School Portfolio Project</h2>
+          <a class="project-img lambda" target="_blank" href="projects/portfolio-website\Portfolio\index.html">
+            <img src="images\LambdaPortfolio.JPG" alt="Lamba Portfolio Project">
+          </a>
+        </div>
+        <a class="code" href="https://github.com/Devin44G/portfolio-website/tree/devin-graham" target="_blank">&lt;The Code/&gt;</a>
       </div>
+<!-- Distance Fitness -->
+    <div class="project-card">
+      <div>
+        <h2>Distance Fitness Marketing Page</h2>
+        <a class="project-img distance-fit" target="_blank" href="http://distancefitness.netlify.com/">
+          <img src="images\DistanceFitness.jpg" alt="Distance Fitness App Project">
+        </a>
+      </div>
+      <a class="code" href="https://github.com/Build-Week-Weight-Lifting-Journal-3/Marketing-Page" target="_blank">&lt;The Code/&gt;</a>
     </div>
   </section>
 <!-- Project Section End -->
 
 <!-- Contact Section Begin -->
-  <section id="contact">
+  <section class="contact" id="contact">
     <h1> Contact </h1>
 
-    <div id="contact-list">
-      <ul>
-        <li>
-          <a
-            id="profile-link"
-            target="_blank"
-            href="https://github.com/Devin44G?tab=repositories">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="mailto:thefictionist.44@gmail.com">
-            <i class="fas fa-at"></i> Email
-          </a>
-        </li>
-      </ul>
+    <div class="contact-list">
+<!-- GitHub -->
+      <a
+        id="profile-link"
+        target="_blank"
+        href="https://github.com/Devin44G?tab=repositories">
+        <i class="fab fa-github"> GitHub</i>
+      </a>
+<!-- Email -->
+      <a
+        href="mailto:thefictionist.44@gmail.com"
+        target="_blank">
+        <i class="fas fa-at"> Email</i>
+      </a>
+<!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/in/devin-graham-9556b8192/"
+        target="_blank">
+        <i class="fab fa-linkedin"> LinkedIn</i>
+      </a>
     </div>
   </section>
 <!-- Contact Section End -->

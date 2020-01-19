@@ -1,0 +1,29 @@
+.navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 1rem 0 1em 0;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(48, 133, 167, .8);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      margin-right: 2rem;
+
+      &:hover {
+        background: @main-black;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
