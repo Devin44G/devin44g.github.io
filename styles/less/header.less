@@ -1,0 +1,34 @@
+
+/* Welcome Section Formatting */
+.welcome-section {
+  background: url(../../images/Mountains.jpg) no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  canvas {
+    position: absolute;
+  }
+
+  .header-text {
+    width: 95%;
+    z-index: 1;
+
+    p {
+      color: @main-accent;
+      font-size: 4rem;
+      text-shadow:
+    		-1px -1px 0 @main-color,
+    		1px -1px 0 @main-color,
+    		-1px 1px 0 @main-color,
+    		1px 1px 0 @main-color;
+    }
+  }
+}

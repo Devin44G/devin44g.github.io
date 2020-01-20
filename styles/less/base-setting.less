@@ -1,0 +1,68 @@
+/* Importing the Google Fonts I'm Using */
+@import url('https://fonts.googleapis.com/css?family=Atomic+Age|Cutive+Mono&display=swap');
+
+/* Base Reset & Formatting */
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+
+/* Basic Formatting */
+body {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.5;
+  // text-shadow:
+	// 	-1px -1px 0 #000,
+	// 	1px -1px 0 #000,
+	// 	-1px 1px 0 #000,
+	// 	1px 1px 0 #000;
+}
+
+h1, h2 {
+  color: @main-font-color;
+  font-family: 'Atomic Age', cursive;
+  font-variant: small-caps;
+  font-size: 8rem;
+  font-weight: 800;
+  text-align: center;
+  text-shadow:
+		-1.5px -1.5px 0 #000,
+		1.5px -1.5px 0 #000,
+		-1.5px 1.5px 0 #000,
+		1.5px 1.5px 0 #000;
+}
+h2 {
+  font-size: 7rem;
+}
+
+h3 {
+  font-family: 'Atomic Age', cursive;
+  font-size: 3.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a, span {
+  text-decoration: none;
+  color: @main-font-color;
+  font-size: 2.5rem;
+}
+
+span {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 2rem;
+}

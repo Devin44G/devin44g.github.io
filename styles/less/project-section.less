@@ -1,0 +1,95 @@
+/* Project Section Formatting */
+.projects {
+  background-image: linear-gradient(260deg, @main-accent, #123e50);
+  display: block;
+  padding: 8% 0;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project-card {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+      text-align: center;
+      transition: .5s;
+
+      @media (max-width: 700px) {
+        width: 80%;
+      }
+
+      &:hover {
+        background-color: @main-color;
+        border-radius: 5px;
+
+        div h3 {
+          color: @main-font-color;
+          text-shadow:
+            -1.5px -1.5px 0 @main-accent,
+            1.5px -1.5px 0 @main-accent,
+            -1.5px 1.5px 0 @main-accent,
+            1.5px 1.5px 0 @main-accent;
+        }
+      }
+
+      div {
+        height: 80%;
+        padding: 2rem 2rem 1rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        h3 {
+          transition: .25s;
+        }
+
+        .project-img {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .code {
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        transition: .25s;
+
+        .brackets {
+          display: none;
+        }
+
+        &:hover {
+          color: @main-accent;
+
+          .brackets {
+            display: inherit;
+            color: @main-accent;
+          }
+        }
+      }
+    }
+  }
+}

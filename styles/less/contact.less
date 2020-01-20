@@ -1,0 +1,35 @@
+/* Contact Section & Footer Formatting */
+.contact {
+  padding: 100px 50px 100px 50px;
+  background-color: var(--main-black);
+  background-image: linear-gradient(to bottom, @main-color, #000000);
+
+  h1 {
+    padding-bottom: 5rem;
+  }
+  .contact-list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin-top: 2rem;
+
+      i {
+        transition: .5s;
+
+        &:hover {
+          color: @main-accent;
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding-bottom: 5rem;
+  background-color: black;
+  text-align: center;
+  color: @main-accent;
+}
