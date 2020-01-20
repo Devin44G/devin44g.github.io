@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="styles/css/index.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
 
@@ -19,9 +21,30 @@
   </nav>
 <!-- Navbar End -->
 
+<!-- HAMBURGER MENU (FOR MOBILE) -->
+  <div class="menu-cont">
+    <input type="checkbox" class="toggle">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <a href="#welcome-section"><li>About Me</li></a>
+            <a href="#projects"><li>Current Project</li></a>
+            <a href="contact"><li>Contact</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- HAMBURGER MENU END -->
+
 <!-- Header Section Begin -->
   <section class="welcome-section" id="welcome-section">
     <canvas></canvas>
+    <span class="head-span"></span>
     <div class="header-text">
       <h1> Hi, I'm Devin </h1>
       <p> <strong>&lt  I code stuff  /&gt</strong> </p>
@@ -30,65 +53,65 @@
 <!-- Header Section End -->
 
 <!-- Projects Section Begin -->
-  <section class="projects">
-    <h1> My Projects </h1>
+  <section class="projects" id="projects">
+    <h2> My Projects </h2>
 <!-- Tribute Page -->
     <div class="grid">
       <div class="project-card">
         <div>
-          <h2>Tribute Page</h2>
+          <h3>Tribute Page</h3>
           <a class="project-img tribute" target="_blank" href="projects/Tribute Page/index.html">
             <img src="images/Tribute.jpg" alt="Tribute Page Project">
           </a>
         </div>
-        <a class="code" href="https://github.com/Devin44G/Tribute-Page-HTML" target="_blank">&lt;The Code/&gt;</a>
+        <a class="code" href="https://github.com/Devin44G/Tribute-Page-HTML" target="_blank"><span class="brackets">&lt;</span>The Code<span class="brackets">/&gt;</span></a>
       </div>
 <!-- Form Validation -->
       <div class="project-card">
         <div>
-          <h2>JavaScript Animated Form</h2>
+          <h3>JavaScript Animated Form</h3>
           <a class="project-img form" target="_blank" href="projects/Form Validation/index.html">
             <img src="images/ValidationForm.jpg" alt="Animated Survey Project">
           </a>
         </div>
-        <a class="code" href="https://github.com/Devin44G/Animated-Validation-Form" target="_blank">&lt;The Code/&gt;</a>
+        <a class="code" href="https://github.com/Devin44G/Animated-Validation-Form" target="_blank"><span class="brackets">&lt;</span>The Code<span class="brackets">/&gt;</span></a>
       </div>
 <!-- PHP Blog -->
       <div class="project-card">
         <div>
-          <h2>PHP Blog Creator</h2>
+          <h3>PHP Blog Creator</h3>
           <a class="project-img php" target="_blank" href="projects/php.html">
             <img src="images/PHP Blog Full.jpg" alt="PHP Blog">
           </a>
         </div>
-        <a class="code" href="https://github.com/Devin44G/PHP-Blog-Project" target="_blank">&lt;The Code/&gt;</a>
+        <a class="code" href="https://github.com/Devin44G/PHP-Blog-Project" target="_blank"><span class="brackets">&lt;</span>The Code<span class="brackets">/&gt;</span></a>
       </div>
 <!-- Lambda Portfolio Project -->
       <div class="project-card">
         <div>
-          <h2>Lambda School Portfolio Project</h2>
+          <h3>Lambda School Portfolio Project</h3>
           <a class="project-img lambda" target="_blank" href="projects/portfolio-website\Portfolio\index.html">
             <img src="images\LambdaPortfolio.JPG" alt="Lamba Portfolio Project">
           </a>
         </div>
-        <a class="code" href="https://github.com/Devin44G/portfolio-website/tree/devin-graham" target="_blank">&lt;The Code/&gt;</a>
+        <a class="code" href="https://github.com/Devin44G/portfolio-website/tree/devin-graham" target="_blank"><span class="brackets">&lt;</span>The Code<span class="brackets">/&gt;</span></a>
       </div>
 <!-- Distance Fitness -->
     <div class="project-card">
       <div>
-        <h2>Distance Fitness Marketing Page</h2>
+        <h3>Distance Fitness Marketing Page</h3>
         <a class="project-img distance-fit" target="_blank" href="http://distancefitness.netlify.com/">
           <img src="images\DistanceFitness.jpg" alt="Distance Fitness App Project">
         </a>
       </div>
-      <a class="code" href="https://github.com/Build-Week-Weight-Lifting-Journal-3/Marketing-Page" target="_blank">&lt;The Code/&gt;</a>
+      <a class="code" href="https://github.com/Build-Week-Weight-Lifting-Journal-3/Marketing-Page" target="_blank"><span class="brackets">&lt;</span>The Code<span class="brackets">/&gt;</span></a>
     </div>
   </section>
 <!-- Project Section End -->
 
 <!-- Contact Section Begin -->
   <section class="contact" id="contact">
-    <h1> Contact </h1>
+    <h2> Contact </h2>
 
     <div class="contact-list">
 <!-- GitHub -->

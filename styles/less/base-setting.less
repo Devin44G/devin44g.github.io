@@ -18,7 +18,7 @@ html {
 
 /* Basic Formatting */
 body {
-  font-family: Cutive Mono, monospace;
+  font-family: 'Cutive Mono', monospace;
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.5;
@@ -29,11 +29,11 @@ body {
 	// 	1px 1px 0 #000;
 }
 
-h1 {
-  color: white;
-  font-family: Atomic Age, cursive;
+h1, h2 {
+  color: @main-font-color;
+  font-family: 'Atomic Age', cursive;
   font-variant: small-caps;
-  font-size: 7rem;
+  font-size: 8rem;
   font-weight: 800;
   text-align: center;
   text-shadow:
@@ -42,6 +42,14 @@ h1 {
 		-1.5px 1.5px 0 #000,
 		1.5px 1.5px 0 #000;
 }
+h2 {
+  font-size: 7rem;
+}
+
+h3 {
+  font-family: 'Atomic Age', cursive;
+  font-size: 3.5rem;
+}
 
 ul {
   list-style: none;
@@ -49,7 +57,7 @@ ul {
 
 a, span {
   text-decoration: none;
-  color: white;
+  color: @main-font-color;
   font-size: 2.5rem;
 }
 

@@ -18,10 +18,17 @@
   }
 
   .header-text {
+    width: 95%;
+    z-index: 1;
 
     p {
-      color: @main-blue;
+      color: @main-accent;
       font-size: 4rem;
+      text-shadow:
+    		-1px -1px 0 @main-color,
+    		1px -1px 0 @main-color,
+    		-1px 1px 0 @main-color,
+    		1px 1px 0 @main-color;
     }
   }
 }

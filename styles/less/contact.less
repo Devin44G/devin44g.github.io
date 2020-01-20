@@ -2,7 +2,7 @@
 .contact {
   padding: 100px 50px 100px 50px;
   background-color: var(--main-black);
-  background-image: linear-gradient(to bottom, @main-black, #000000);
+  background-image: linear-gradient(to bottom, @main-color, #000000);
 
   h1 {
     padding-bottom: 5rem;
@@ -16,11 +16,11 @@
       margin-top: 2rem;
 
       i {
-        
+        transition: .5s;
+
         &:hover {
-          background-color: @main-blue;
-          padding: 1rem 2rem;
-          border-radius: 5px;
+          color: @main-accent;
+          font-size: 2.3rem;
         }
       }
     }
@@ -31,5 +31,5 @@ footer {
   padding-bottom: 5rem;
   background-color: black;
   text-align: center;
-  color: @main-blue;
+  color: @main-accent;
 }
