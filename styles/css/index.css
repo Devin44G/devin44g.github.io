@@ -325,6 +325,18 @@ body .menu-cont .menu div div ul a:last-child li {
 .projects .grid .project-card div .project-img img {
   width: 100%;
 }
+.projects .grid .project-card div .distance-fit {
+  display: block;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.projects .grid .project-card div .distance-fit div {
+  background: url('../../images/DistanceFitness.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
 .projects .grid .project-card .code {
   margin-top: 2rem;
   padding-bottom: 2rem;
