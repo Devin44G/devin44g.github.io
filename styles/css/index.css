@@ -68,7 +68,7 @@ span {
   top: 0;
   left: 0;
   z-index: 10;
-  padding: 1rem 0 1em 0;
+  padding: 0.5rem 0 0.5em 0;
   position: fixed;
   display: flex;
   justify-content: flex-end;
@@ -261,97 +261,59 @@ body .menu-cont .menu div div ul a:last-child li {
   text-shadow: -1px -1px 0 #121414, 1px -1px 0 #121414, -1px 1px 0 #121414, 1px 1px 0 #121414;
 }
 /* Project Section Formatting */
-.projects {
+.projects-container {
   background-image: linear-gradient(260deg, #1d6582, #123e50);
   display: block;
   padding: 8% 0;
   border-top: solid 2px black;
   border-bottom: solid 2px black;
 }
-.projects h1 {
+.projects-container h2 {
   margin-bottom: 50px;
 }
-.projects .grid {
+.projects-container .projects {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 @media (max-width: 700px) {
-  .projects .grid {
+  .projects-container .projects {
     flex-direction: column;
     align-items: center;
   }
 }
-.projects .grid .project-card {
-  margin: 0;
+.projects-container .projects .card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 2rem;
+  background-color: #FDF5E6;
+  border-radius: 0.5rem;
+  height: 7rem;
   width: 40%;
+  overflow: hidden;
+  transition: 1s;
   text-align: center;
-  transition: 0.5s;
 }
 @media (max-width: 700px) {
-  .projects .grid .project-card {
+  .projects-container .projects .card-container {
     width: 80%;
   }
 }
-.projects .grid .project-card:hover {
+.projects-container .projects .card-container h3 {
+  padding: 1rem;
+}
+.projects-container .projects .card-container:hover {
   background-color: #121414;
   border-radius: 5px;
+  cursor: pointer;
+  height: 350px;
+  transition: 1s;
 }
-.projects .grid .project-card:hover div h3 {
+.projects-container .projects .card-container:hover h3 {
   color: #FDF5E6;
   text-shadow: -1.5px -1.5px 0 #1d6582, 1.5px -1.5px 0 #1d6582, -1.5px 1.5px 0 #1d6582, 1.5px 1.5px 0 #1d6582;
-}
-.projects .grid .project-card div {
-  height: 80%;
-  padding: 2rem 2rem 1rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-.projects .grid .project-card div h3 {
-  transition: 0.25s;
-}
-.projects .grid .project-card div .project-img {
-  display: flex;
-  align-items: center;
-}
-.projects .grid .project-card div .project-img img {
-  width: 100%;
-}
-.projects .grid .project-card div .distance-fit {
-  display: block;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.projects .grid .project-card div .distance-fit div {
-  background: url('../../images/DistanceFitness.jpg') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-.projects .grid .project-card .code {
-  margin-top: 2rem;
-  padding-bottom: 2rem;
-  display: flex;
-  transition: 0.25s;
-}
-.projects .grid .project-card .code .brackets {
-  display: none;
-}
-.projects .grid .project-card .code:hover {
-  color: #1d6582;
-}
-.projects .grid .project-card .code:hover .brackets {
-  display: inherit;
-  color: #1d6582;
 }
 /* Contact Section & Footer Formatting */
 .contact {
