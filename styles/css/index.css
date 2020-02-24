@@ -68,7 +68,7 @@ span {
   top: 0;
   left: 0;
   z-index: 10;
-  padding: 1rem 0 1em 0;
+  padding: 0.5rem 0 0.5em 0;
   position: fixed;
   display: flex;
   justify-content: flex-end;
@@ -261,97 +261,129 @@ body .menu-cont .menu div div ul a:last-child li {
   text-shadow: -1px -1px 0 #121414, 1px -1px 0 #121414, -1px 1px 0 #121414, 1px 1px 0 #121414;
 }
 /* Project Section Formatting */
-.projects {
+.h3links {
+  color: #121414;
+}
+.projects-container {
   background-image: linear-gradient(260deg, #1d6582, #123e50);
   display: block;
   padding: 8% 0;
   border-top: solid 2px black;
   border-bottom: solid 2px black;
 }
-.projects h1 {
+.projects-container h2 {
   margin-bottom: 50px;
 }
-.projects .grid {
+.projects-container .projects {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 @media (max-width: 700px) {
-  .projects .grid {
+  .projects-container .projects {
     flex-direction: column;
     align-items: center;
   }
 }
-.projects .grid .project-card {
-  margin: 0;
+.projects-container .projects .card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 2rem;
+  background-color: #FDF5E6;
+  border-radius: 0.5rem;
+  height: 7rem;
   width: 40%;
+  overflow: hidden;
+  transition: 1s;
   text-align: center;
-  transition: 0.5s;
 }
 @media (max-width: 700px) {
-  .projects .grid .project-card {
+  .projects-container .projects .card-container {
     width: 80%;
   }
 }
-.projects .grid .project-card:hover {
+.projects-container .projects .card-container h3 {
+  padding: 1rem;
+}
+.projects-container .projects .card-container:hover {
   background-color: #121414;
   border-radius: 5px;
+  cursor: pointer;
+  height: 350px;
+  transition: 1s;
 }
-.projects .grid .project-card:hover div h3 {
+.projects-container .projects .card-container:hover h3 {
   color: #FDF5E6;
   text-shadow: -1.5px -1.5px 0 #1d6582, 1.5px -1.5px 0 #1d6582, -1.5px 1.5px 0 #1d6582, 1.5px 1.5px 0 #1d6582;
 }
-.projects .grid .project-card div {
-  height: 80%;
-  padding: 2rem 2rem 1rem;
-  overflow: hidden;
+.projects-container .projects-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+@media (max-width: 700px) {
+  .projects-container .projects-page {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.projects-container .projects-page .card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  max-width: 45%;
+  text-align: center;
 }
-.projects .grid .project-card div h3 {
-  transition: 0.25s;
+@media (max-width: 700px) {
+  .projects-container .projects-page .card-container {
+    max-width: 100%;
+  }
 }
-.projects .grid .project-card div .project-img {
+.projects-container .projects-page .card-container .card {
+  overflow: hidden;
+  position: relative;
+}
+.projects-container .projects-page .card-container .card:hover .card-hover {
+  visibility: visible;
+  height: 350px;
+  background-color: #121414;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+.projects-container .projects-page .card-container .card:hover .card-hover ul {
+  list-style: square inside;
+  margin-left: 1rem;
+}
+.projects-container .projects-page .card-container .card .card-hover {
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+  color: lightgrey;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  z-index: 1;
 }
-.projects .grid .project-card div .project-img img {
-  width: 100%;
-}
-.projects .grid .project-card div .distance-fit {
-  display: block;
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.projects .grid .project-card div .distance-fit div {
-  background: url('../../images/DistanceFitness.jpg') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-.projects .grid .project-card .code {
+.projects-container .projects-page .card-container .card .code {
   margin-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
+  justify-content: center;
   transition: 0.25s;
 }
-.projects .grid .project-card .code .brackets {
+.projects-container .projects-page .card-container .card .code .brackets {
   display: none;
 }
-.projects .grid .project-card .code:hover {
-  color: #1d6582;
+.projects-container .projects-page .card-container .card .code:hover {
+  color: #121414;
 }
-.projects .grid .project-card .code:hover .brackets {
+.projects-container .projects-page .card-container .card .code:hover .brackets {
   display: inherit;
-  color: #1d6582;
+  color: #121414;
 }
 /* Contact Section & Footer Formatting */
 .contact {
