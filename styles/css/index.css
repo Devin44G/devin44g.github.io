@@ -261,6 +261,9 @@ body .menu-cont .menu div div ul a:last-child li {
   text-shadow: -1px -1px 0 #121414, 1px -1px 0 #121414, -1px 1px 0 #121414, 1px 1px 0 #121414;
 }
 /* Project Section Formatting */
+.h3links {
+  color: #121414;
+}
 .projects-container {
   background-image: linear-gradient(260deg, #1d6582, #123e50);
   display: block;
@@ -314,6 +317,73 @@ body .menu-cont .menu div div ul a:last-child li {
 .projects-container .projects .card-container:hover h3 {
   color: #FDF5E6;
   text-shadow: -1.5px -1.5px 0 #1d6582, 1.5px -1.5px 0 #1d6582, -1.5px 1.5px 0 #1d6582, 1.5px 1.5px 0 #1d6582;
+}
+.projects-container .projects-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+@media (max-width: 700px) {
+  .projects-container .projects-page {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.projects-container .projects-page .card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 45%;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .projects-container .projects-page .card-container {
+    max-width: 100%;
+  }
+}
+.projects-container .projects-page .card-container .card {
+  overflow: hidden;
+  position: relative;
+}
+.projects-container .projects-page .card-container .card:hover .card-hover {
+  visibility: visible;
+  height: 350px;
+  background-color: #121414;
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+.projects-container .projects-page .card-container .card:hover .card-hover ul {
+  list-style: square inside;
+  margin-left: 1rem;
+}
+.projects-container .projects-page .card-container .card .card-hover {
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+  color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.projects-container .projects-page .card-container .card .code {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  transition: 0.25s;
+}
+.projects-container .projects-page .card-container .card .code .brackets {
+  display: none;
+}
+.projects-container .projects-page .card-container .card .code:hover {
+  color: #121414;
+}
+.projects-container .projects-page .card-container .card .code:hover .brackets {
+  display: inherit;
+  color: #121414;
 }
 /* Contact Section & Footer Formatting */
 .contact {
