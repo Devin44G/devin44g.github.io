@@ -18,17 +18,33 @@
   }
 
   .header-text {
-    width: 95%;
+    width: 100%;
     z-index: 1;
+    padding-top: 15rem;
 
     p {
-      color: @main-accent;
-      font-size: 4rem;
+      color: @main-orange;
+      font-size: 3.7rem;
       text-shadow:
     		-1px -1px 0 @main-color,
     		1px -1px 0 @main-color,
     		-1px 1px 0 @main-color,
     		1px 1px 0 @main-color;
     }
+  }
+
+  .bio {
+    width: 70%;
+    background-color: rgba(@main-accent, .9);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
+    margin-top: 10rem;
+    border: 1px solid @main-color;
+
+    font-size: 2rem;
+    text-align: justify;
+    color: @main-font-color;
+    z-index: 1;
   }
 }

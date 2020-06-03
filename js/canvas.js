@@ -35,7 +35,8 @@ var minRadius = 2;
 var colorArray = [
   '#000000',
   '#ffffff',
-  '#1d6582'
+  '#1d6582',
+  '#ff6c24'
 ];
 
 /* Setting up the Circle function to refer back to within later functions, giving
