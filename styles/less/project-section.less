@@ -1,6 +1,6 @@
 /* Project Section Formatting */
 .h3links {
-  color: @main-color;
+  color: @main-orange;
 }
 
 .projects-container {
@@ -12,6 +12,26 @@
 
   h2 {
     margin-bottom: 50px;
+  }
+
+  .featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    .featured-project {
+      width: 80%;
+
+      h3 {
+
+        a:hover {
+          color: @main-orange;
+          transition: .5s;
+        }
+      }
+    }
   }
 
   .projects {

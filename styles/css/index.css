@@ -276,7 +276,7 @@ body .menu-cont .menu div div ul a:last-child li {
 }
 /* Project Section Formatting */
 .h3links {
-  color: #121414;
+  color: #ff6c24;
 }
 .projects-container {
   background-image: linear-gradient(260deg, #1d6582, #123e50);
@@ -287,6 +287,20 @@ body .menu-cont .menu div div ul a:last-child li {
 }
 .projects-container h2 {
   margin-bottom: 50px;
+}
+.projects-container .featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.projects-container .featured .featured-project {
+  width: 80%;
+}
+.projects-container .featured .featured-project h3 a:hover {
+  color: #ff6c24;
+  transition: 0.5s;
 }
 .projects-container .projects {
   width: 100%;
