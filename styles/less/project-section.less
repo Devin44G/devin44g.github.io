@@ -23,12 +23,26 @@
 
     .featured-project {
       width: 80%;
+      margin-bottom: 3rem;
 
       h3 {
 
         a:hover {
           color: @main-orange;
           transition: .5s;
+        }
+      }
+      h4 {
+        text-transform: uppercase;
+      }
+      h4, p {
+        margin-left: 2.5rem;
+      }
+      p {
+        span {
+          display: block;
+          color: @main-color;
+          margin: 1rem 0 0 2.5rem;
         }
       }
     }
@@ -53,10 +67,8 @@
 
       background-color: @main-font-color;
       border-radius: .5rem;
-      height: 7rem;
       width: 40%;
-      overflow: hidden;
-      transition: 1s;
+      transition: .5s;
       text-align: center;
 
       @media (max-width: 700px) {
@@ -69,10 +81,8 @@
 
       &:hover {
         background-color: @main-color;
-        border-radius: 5px;
         cursor: pointer;
-        height: 350px;
-        transition: 1s;
+        transition: .5s;
 
         h3 {
           color: @main-font-color;
