@@ -105,7 +105,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-start;
 
     @media (max-width: 700px) {
       flex-direction: column;
@@ -123,37 +123,14 @@
         max-width: 100%;
       }
 
+      h3 {
+        margin-bottom: 1.5rem;
+      }
+
       .card {
-        overflow: hidden;
-        position: relative;
-
-        &:hover {
-          .card-hover {
-            visibility: visible;
-            height: 350px;
-            background-color: @main-color;
-            transition: ease .5s;
-            cursor: pointer;
-
-            ul {
-              list-style: square inside;
-              margin-left: 1rem;
-            }
-          }
-        }
-
-        .card-hover {
-          width: 100%;
-          position: absolute;
-          visibility: hidden;
-          color: lightgrey;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          z-index: 1;
-          // text-align: center;
-        }
+        padding: 2rem;
+        background: @main-color;
+        border-radius: 5px;
 
         .code {
           margin-top: 2rem;
@@ -167,12 +144,24 @@
           }
 
           &:hover {
-            color: @main-color;
+            color: @main-orange;
 
             .brackets {
               display: inherit;
-              color: @main-color;
+              color: @main-orange;
             }
+          }
+        }
+      }
+      .tech-stack {
+        color: @main-font-color;
+        .project-desc {
+          ul {
+            margin: 1.5rem 0 0 2.5rem;
+            font-size: 2.5rem;
+            text-align: left;
+            list-style-position: inside;
+            list-style-type: circle;
           }
         }
       }

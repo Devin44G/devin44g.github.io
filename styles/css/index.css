@@ -365,7 +365,7 @@ body .menu-cont .menu div div ul a:last-child li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 @media (max-width: 700px) {
   .projects-container .projects-page {
@@ -385,31 +385,13 @@ body .menu-cont .menu div div ul a:last-child li {
     max-width: 100%;
   }
 }
+.projects-container .projects-page .card-container h3 {
+  margin-bottom: 1.5rem;
+}
 .projects-container .projects-page .card-container .card {
-  overflow: hidden;
-  position: relative;
-}
-.projects-container .projects-page .card-container .card:hover .card-hover {
-  visibility: visible;
-  height: 350px;
-  background-color: #121414;
-  transition: ease 0.5s;
-  cursor: pointer;
-}
-.projects-container .projects-page .card-container .card:hover .card-hover ul {
-  list-style: square inside;
-  margin-left: 1rem;
-}
-.projects-container .projects-page .card-container .card .card-hover {
-  width: 100%;
-  position: absolute;
-  visibility: hidden;
-  color: lightgrey;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
+  padding: 2rem;
+  background: #121414;
+  border-radius: 5px;
 }
 .projects-container .projects-page .card-container .card .code {
   margin-top: 2rem;
@@ -422,11 +404,21 @@ body .menu-cont .menu div div ul a:last-child li {
   display: none;
 }
 .projects-container .projects-page .card-container .card .code:hover {
-  color: #121414;
+  color: #ff6c24;
 }
 .projects-container .projects-page .card-container .card .code:hover .brackets {
   display: inherit;
-  color: #121414;
+  color: #ff6c24;
+}
+.projects-container .projects-page .card-container .tech-stack {
+  color: #FDF5E6;
+}
+.projects-container .projects-page .card-container .tech-stack .project-desc ul {
+  margin: 1.5rem 0 0 2.5rem;
+  font-size: 2.5rem;
+  text-align: left;
+  list-style-position: inside;
+  list-style-type: circle;
 }
 /* Contact Section & Footer Formatting */
 .contact {
